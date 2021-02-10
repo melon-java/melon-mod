@@ -60,29 +60,6 @@ print "Hello World"
 <!-- If you want turtle graphics include a canvas -->
 <div id="mycanvas"></div> 
 
-<script>
-    Sk.onAfterImport = function(library) {
-  switch(library) {
-    case 'pygal':
-      // make charts render instantly
-      Highcharts.setOptions({
-        plotOptions: {
-          series: {
-            animation: false
-          }
-        }
-      });
-      break;
-    case 'turtle':
-      // make turtle draw instantly
-      Sk.tg.defaults.animate = false;
-      Sk.tg.Turtle.prototype.speed = function() {}
-      Sk.tg.Turtle.prototype.delay = function() {}
-      break;
-  }
-}
-    </script>
-    
 </body> 
 
-</html> 
+</html>

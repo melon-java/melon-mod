@@ -15,3 +15,7 @@ def square():
     # drawing fourth side
     t.forward(s) # Forward turtle by s units
     t.left(90) # Turn turtle by 90 degree
+
+    
+def window():
+    turtle.Turtle()
